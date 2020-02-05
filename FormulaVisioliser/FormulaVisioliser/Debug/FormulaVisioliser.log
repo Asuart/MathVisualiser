@@ -1,0 +1,10 @@
+﻿  FormulaVisioliser.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(130,1): warning C4005: APIENTRY: изменение макроопределения
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\GLFW\glfw3.h(123): message : см. предыдущее определение "APIENTRY"
+C:\Users\Asuart\source\repos\FormulaVisioliser\FormulaVisioliser\FormulaVisioliser.cpp(56,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\Asuart\source\repos\FormulaVisioliser\FormulaVisioliser\FormulaVisioliser.cpp(82,15): warning C4244: инициализация: преобразование "f64" в "s32", возможна потеря данных
+C:\Users\Asuart\source\repos\FormulaVisioliser\FormulaVisioliser\FormulaVisioliser.cpp(83,15): warning C4244: инициализация: преобразование "f64" в "s32", возможна потеря данных
+C:\Users\Asuart\source\repos\FormulaVisioliser\FormulaVisioliser\FormulaVisioliser.cpp(125,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Asuart\source\repos\FormulaVisioliser\FormulaVisioliser\FormulaVisioliser.cpp(126,63): warning C4244: аргумент: преобразование "f64" в "f32", возможна потеря данных
+C:\Users\Asuart\source\repos\FormulaVisioliser\FormulaVisioliser\FormulaVisioliser.cpp(128,16): warning C4244: инициализация: преобразование "f64" в "s32", возможна потеря данных
+  FormulaVisioliser.vcxproj -> C:\Users\Asuart\source\repos\FormulaVisioliser\Debug\FormulaVisioliser.exe

@@ -1,0 +1,3 @@
+y = sin(x)
+y = cos(x)
+y = 20 * (sin(x) + cos(x))
