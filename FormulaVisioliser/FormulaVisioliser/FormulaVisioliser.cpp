@@ -46,13 +46,9 @@ void scroll_callback(GLFWwindow* window, double xoffset, double yoffset)
 	UpdateConfigs();
 }
 
-int main(int argc, char** argv)
+int main()
 {
-	const char* path = "C:/Users/Asuart/source/repos/FormulaVisioliser/Debug/formula.txt";
-	if (argc > 0) {
-		char* path = argv[0];
-	}
-
+	const char* path = "./formula.txt";
 	srand(time(0));
 	u8* screen = new u8[pixelDataLength];
 
@@ -61,6 +57,7 @@ int main(int argc, char** argv)
 	std::ifstream reader = std::ifstream(path, std::ios::in);
 
 	if (reader.is_open()) {
+		std::cout << "File path: " << path << std::endl;
 		s8* c_str = new s8[max_str_length]; // max str length is 250 symbols;
 		while (!reader.eof()) {
 			reader.getline(c_str, max_str_length);
@@ -68,9 +65,12 @@ int main(int argc, char** argv)
 			formules.push_back(Formula(str));
 		}
 	}
-	else exit(1);
+	else {
+		std::cout << "Could not open file: " << path << std::endl;
+		exit(1);
+	}
 	reader.close();
-	
+
 
 
 	auto DrawCoords = [screen]() {
@@ -101,15 +101,15 @@ int main(int argc, char** argv)
 
 		for (s32 i = 0; i < screenWidth; i++) {
 			f32 value = formula.DefineInX((i - ((s32)screenWidth / 2)) * pixelWidth);
-			if (value < screenHeight * pixelHeight / 2 && value > screenHeight * pixelHeight / 2 * -1) {
+			if (value < screenHeight * pixelHeight / 2 && value > screenHeight* pixelHeight / 2 * -1) {
 				s32 height = (value + screenHeight * pixelHeight / 2) / pixelHeight;
 				screen32[800 * height + i] = color;
 			}
-			
+
 		}
 	};
-	
-	if(!glfwInit()) exit(3);
+
+	if (!glfwInit()) exit(3);
 	GLFWwindow* mainWindow = glfwCreateWindow(screenWidth, screenHeight, "Formula Visualizer", NULL, NULL);
 	glfwMakeContextCurrent(mainWindow);
 	glfwSetKeyCallback(mainWindow, key_callback);
@@ -132,4 +132,3 @@ int main(int argc, char** argv)
 	}
 	return 0;
 }
-

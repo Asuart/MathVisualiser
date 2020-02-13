@@ -1,1 +1,12 @@
-﻿msvcprtd.lib(MSVCP140D.dll) : fatal error LNK1112: тип компьютера модуля "x86" конфликтует с типом целевого компьютера "x64"
+﻿  Formula.cpp
+C:\Users\Asuart\source\repos\FormulaVisioliser\FormulaVisioliser\Formula.cpp(73,34): warning C4267: инициализация: преобразование из "size_t" в "s32"; возможна потеря данных
+C:\Users\Asuart\source\repos\FormulaVisioliser\FormulaVisioliser\Formula.cpp(84,28): warning C4267: =: преобразование из "size_t" в "s32"; возможна потеря данных
+C:\Users\Asuart\source\repos\FormulaVisioliser\FormulaVisioliser\Formula.cpp(91,28): warning C4267: =: преобразование из "size_t" в "s32"; возможна потеря данных
+C:\Users\Asuart\source\repos\FormulaVisioliser\FormulaVisioliser\Formula.cpp(98,27): warning C4267: =: преобразование из "size_t" в "s32"; возможна потеря данных
+C:\Users\Asuart\source\repos\FormulaVisioliser\FormulaVisioliser\Formula.cpp(105,28): warning C4267: =: преобразование из "size_t" в "s32"; возможна потеря данных
+  FormulaVisioliser.cpp
+C:\Users\Asuart\source\repos\FormulaVisioliser\FormulaVisioliser\Formula.cpp(165,14): warning C4244: инициализация: преобразование "std::streamoff" в "u32", возможна потеря данных
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(130,1): warning C4005: APIENTRY: изменение макроопределения
+  Создание кода...
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\GLFW\glfw3.h(123): message : см. предыдущее определение "APIENTRY"
+msvcprtd.lib(MSVCP140D.dll) : fatal error LNK1112: тип компьютера модуля "x86" конфликтует с типом целевого компьютера "x64"
